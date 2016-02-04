@@ -2,7 +2,7 @@
 バシャログで公開しているgulpのサンプルver2です。
 
 * [2016-02-03](https://github.com/c-brains/gulp-samples2/tree/2016-02-03)
-  [【gulp】htmlテンプレート「gulp-jade」についてメモメモ（１）～導入](http://bashalog.c-brains.jp/16/02/03-100000.php)
+   [【gulp】htmlテンプレート「gulp-jade」についてメモメモ（１）～導入](http://bashalog.c-brains.jp/16/02/03-100000.php)
 
 サンプルを実行する場合は、
 
