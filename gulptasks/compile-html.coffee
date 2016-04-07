@@ -7,5 +7,6 @@ module.exports = do ->
 	gulp.task 'compile-html', (cb) ->
 		plugins.runSequence(
 			'jade'
+			'beautify-html'
 			cb
 		)
