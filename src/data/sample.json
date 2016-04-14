@@ -1,0 +1,7 @@
+{
+	"info": {
+		"pageTitle": "gulp sample - jsonファイルを扱う方法をメモメモ",
+		"contHeader": "requireを使う方法",
+		"contBody": "requireでjsonファイルを読み込む。更新しても表示される情報は変わりません。requireの場合は、gulpの再起動が必要になります。"
+	}
+}

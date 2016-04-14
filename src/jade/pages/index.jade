@@ -1,12 +1,15 @@
 extends /_common/_layout_default
 
 block localVars
-	- var pageTitle = 'gulp-jade サンプル'
+	- var pageTitle = info.pageTitle
+	- var contHeader = info.contHeader
+	- var contBody = info.contBody
 
 block content
 	include /_modules/_mod_header
 	main
-		h1 このページは、#{pageTitle}です。
+		h1 #{contHeader}
+		p #{contBody}
 		p
 			| Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 			br
