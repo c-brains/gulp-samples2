@@ -6,12 +6,12 @@ plugins = prop.plugins
 module.exports = do ->
 	gulp.task 'jade', ->
 		console.log 'start COMPILE-JADE!!!'
+		dataInfo = JSON.parse plugins.fs.readFileSync(config.paths.src+'data/sample.json', 'utf8')
 		gulp
 		.src config.paths.src+'/jade/pages/**/*.jade'
 		.pipe plugins.plumber
 			errorHandler: plugins.notify.onError 'Error: <%= error.message %>'
-		.pipe plugins.data (file) ->
-			return require '../'+config.paths.src+'data/sample.json'
 		.pipe plugins.jade
 			basedir: config.paths.src+'/jade'
+			data: dataInfo
 		.pipe gulp.dest config.paths.pub

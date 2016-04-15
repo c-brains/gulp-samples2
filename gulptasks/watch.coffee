@@ -21,4 +21,5 @@ module.exports = do ->
 
 		gulp.watch [
 			config.paths.src+'jade/**/*.jade'
+			config.paths.src+'data/**/*.json'
 		], ['compile-html']
